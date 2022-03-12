@@ -52,10 +52,8 @@
 
                                     if($name == ''){
                                        echo "<span class='text-danger'>Please Enter Name</span>";
-                                    }elseif($email == '')
-                                    {
-                                        echo "<span class='text-danger'>Please Enter Email</span>";
-                                    }else{
+                                    }
+                                    else{
                                         $sql = "INSERT INTO members (name,email,password) values ('$name', '$email','$has')";
                                         $res = mysqli_query($connect, $sql);
 
